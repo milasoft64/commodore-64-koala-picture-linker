@@ -26,17 +26,17 @@ https://i.ibb.co/jyJqDPG/d1.jpg
 
 5) As you can see, I've saved the file under the name "test".
 
-[img]https://i.ibb.co/Xy29K84/ww.jpg[/img]
+https://i.ibb.co/Xy29K84/ww.jpg
 
 This is the image we've chosen:
 
-[img]https://i.ibb.co/gj1y0zw/Image5.jpg[/img]
+https://i.ibb.co/gj1y0zw/Image5.jpg
 
 6) We now need to find a way to link the picture to our program. 
 
 If you look at the 64's memory from a visual point of view:
 
-[url=https://imgbb.com/][img]https://i.ibb.co/k1kMK20/mik.jpg[/img][/url]
+https://i.ibb.co/k1kMK20/mik.jpg[/img]
 
 Picture the GREEN bar as the entire RAM memory in the C64. The beginning of Basic memory is as the bottom ($0801), the end of the memory ($9FFF) is at the top. Every program we ever load and type RUN, will load into the GREEN area. Larger programs will use more of the green area, smaller programs will use less area.
 
