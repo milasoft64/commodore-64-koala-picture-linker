@@ -62,12 +62,6 @@ It's not difficult to fix this but there's a complication. That BLUE area of mem
 
 https://i.ibb.co/0VkcjMB/ff.jpg
 
-So what we need is this:
-- Our Koala program as the Yellow area in memory.
-- Leave the Blue area untouched because the Koala program will overwrite it.
-- Place our 50 block game in the area above the Blue.
-
-It's not difficult to do this though.
 
 7) We're going to have to make some adjustments to put this all together. We don't need to make any changes to the Koala program because it exits to Basic when you press a key. So we can call it from another program without issue.
 
@@ -75,8 +69,9 @@ We do need a transfer routine and that routine, by no coincidence, will be store
 
 This is our commented routine:
 
-'''JSR $080D  ; call the Koala picture
-''' SEI  ; stop what you're doing IRQ
+```
+JSR $080D  ; call the Koala picture
+SEI  ; stop what you're doing IRQ
 LDA #$34 ; turn off ROM so we can access the full 64K memory
 STA $01   ;
 LDX #$00 ; set X to zero
@@ -95,6 +90,7 @@ STA $01  ; turn ROM back on again
 CLI   ; thanks for the time IRQ
 JSR $A659
 JMP $A7AE  ; perform RUN
+```
 
 The program works as follows:
 It sets X to zero and copies $8000,x to $0801,x. This moves a single byte at $8000 into $0801 and is the first part of our copy routine. Think of the ,x as "+x"
