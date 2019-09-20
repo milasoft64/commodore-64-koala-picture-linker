@@ -48,7 +48,7 @@ We can load and run the TEST.PRG picture or we can load and run the 50-block gam
 
 In order to fix this, we have to place the game in memory AFTER the picture. This way when the picture is viewed and you press a key, the game is run.
 
-[img]https://i.ibb.co/B2FZfLs/Image4.jpg[/img]
+https://i.ibb.co/B2FZfLs/Image4.jpg
 
 Have you ever loaded a cracked game with a crack intro? When you press the space bar the screen border flashes, there might be some static noises, and there's a mix of different characters on the screen. Some of the screen characters might also be rapidly changing.
 
@@ -60,10 +60,10 @@ By this same logic, we cannot have a memory transfer routine in the actual Koala
 
 It's not difficult to fix this but there's a complication. That BLUE area of memory. As you can see, it's not being used by either the Koala picture or the game. But it is RESERVED because when we run the Koala picture, that area gets used.
 
-[img]https://i.ibb.co/0VkcjMB/ff.jpg[/img]
+https://i.ibb.co/0VkcjMB/ff.jpg
 
 So what we need is this:
-- Our Koala program as the Yellow.
+- Our Koala program as the Yellow area in memory.
 - Leave the Blue area untouched because the Koala program will overwrite it.
 - Place our 50 block game in the area above the Blue.
 
@@ -116,12 +116,8 @@ https://github.com/milasoft64/commodore-64-koala-picture-linker
 
 7) Okay that's it.... now we compile the three files into one.
 
-Download [url=https://csdb.dk/release/download.php?id=19494]ECA Linker[/url]
-Files:
-KP slide show.D64 (sample Koala picture files)
+Download ECA Linker
+https://csdb.dk/release/download.php?id=19494
 
-KoalaKruncher-BC.D64 (Brian Conrad's Koala Cruncher program)
-
-xfer.prg (memory transfer routine placed at $0400)
 
 Milasoft
