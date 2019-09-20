@@ -12,15 +12,16 @@ https://csdb.dk/release/?id=107958
 
 https://csdb.dk/gfx/releases/107000/107958.png
 
-3) Load the cruncher and pack your Koala picture. In this example we're going to use the [url=https://csdb.dk/release/download.php?id=170435]Koala Paint Slideshow disk[/url] for our source images.
+3) Load the cruncher and pack your Koala picture. In this example we're going to use the Koala Paint Slideshow disk for our source images.
 
-[img]https://i.ibb.co/NL49YFf/d1.jpg[/img]
+https://csdb.dk/release/download.php?id=170435
 
+https://i.ibb.co/NL49YFf/d1.jpg
 
-4) Enter in a filename. In this example we'll use the "HEAVY" file. This is the fourth file from the top. If the file is successful you'll see the disk message:
+4) Enter in the filename of the uncompressed Koala file (40 blocks in size). In this example we'll use the "HEAVY" file. This is the fourth file from the top. If the file is successful you'll see the disk message:
 00, OK, 00, 00. You only need to enter the filename, not the "PIC A " part.
 
-[url=https://ibb.co/VgwbTcD][img]https://i.ibb.co/jyJqDPG/d1.jpg[/img][/url]
+https://i.ibb.co/jyJqDPG/d1.jpg
 
 
 5) As you can see, I've saved the file under the name "test".
