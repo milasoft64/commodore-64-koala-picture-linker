@@ -3,13 +3,14 @@ A guide on how to link a Koala Pad picture to another program
 
 The purpose of this tutorial is to link a Commodore 64 Koala picture with a secondary program such as a game. 
 
-[size=18][u][b]How to link a Koala picture to a program[/b][/u][/size]
+How to link a Koala picture to a program
 
 1) If your Koala picture is already compressed (you can load it and type RUN and it displays) go to step 6.
 
-2) Download [url=https://csdb.dk/release/?id=107958]Koala Cruncher[/url]
+2) Download Koala Cruncher
+https://csdb.dk/release/?id=107958
 
-[img]https://csdb.dk/gfx/releases/107000/107958.png[/img]
+https://csdb.dk/gfx/releases/107000/107958.png
 
 3) Load the cruncher and pack your Koala picture. In this example we're going to use the [url=https://csdb.dk/release/download.php?id=170435]Koala Paint Slideshow disk[/url] for our source images.
 
