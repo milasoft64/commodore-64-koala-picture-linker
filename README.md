@@ -36,7 +36,7 @@ https://i.ibb.co/gj1y0zw/Image5.jpg
 
 If you look at the 64's memory from a visual point of view:
 
-https://i.ibb.co/k1kMK20/mik.jpg[/img]
+https://i.ibb.co/k1kMK20/mik.jpg
 
 Picture the GREEN bar as the entire RAM memory in the C64. The beginning of Basic memory is as the bottom ($0801), the end of the memory ($9FFF) is at the top. Every program we ever load and type RUN, will load into the GREEN area. Larger programs will use more of the green area, smaller programs will use less area.
 
