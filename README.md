@@ -18,7 +18,7 @@ https://csdb.dk/release/download.php?id=170435
 
 https://i.ibb.co/NL49YFf/d1.jpg
 
-4) Enter in the filename of the uncompressed Koala file (40 blocks in size). In this example we'll use the "HEAVY" file. This is the fourth file from the top. If the file is successful you'll see the disk message:
+4) Enter in the filename of the uncompressed Koala file (40 blocks in size). In this example we'll use the "HEAVY" file. This is the fourth file from the top. If the file load is successful you'll see the disk message:
 00, OK, 00, 00. You only need to enter the filename, not the "PIC A " part.
 
 https://i.ibb.co/jyJqDPG/d1.jpg
@@ -114,6 +114,37 @@ https://github.com/milasoft64/commodore-64-koala-picture-linker
 
 Download ECA Linker
 https://csdb.dk/release/download.php?id=19494
+
+
+Press a key to enter the main program. You'll be asked for the Low-Mem. This is the lowest point in memory that you'll be using.
+
+In this case because we're using a screen-based transfer routine, we're going to enter $0400 because we want to keep the screen memory preserved when ECA unpacks.
+
+https://i.ibb.co/kJGrkXN/eca2.jpg
+
+Press return for the Skip$. I've never gotten a proper explanation of what this does but I believe it's meant to skip a memory bank area such as $D000.
+
+Now you can enter your files or "$" for a directory:
+
+https://i.ibb.co/DbP2G26/eca.jpg
+
+It doesn't matter the order that you enter them:
+XFER  (the transfer routine I made)
+PAC MAN ARCADE (the game to be linked to the picture)
+TEST (the compressed Koala)
+just do enter them one by one.
+
+https://i.ibb.co/BgJpv04/ee.jpg
+
+When it comes to the second program, the game you want linked to the photo you will add ",8000" to the filename. This will link the game up above the Koala pic and reserved memory ($8000).
+
+You're done.
+
+Enter @ for a filename to signal that you're done. Wait for the program to crunch the files.
+
+https://i.ibb.co/wKYSzfN/ecalinked.jpg
+
+Finally the SYS-ADR$ is the address we want to run when the files are decompressed. If we entered $080D it would show the Koala. We will enter $0400 instead which will call the Koala picture AND transfer the Pac Man game for us.
 
 
 Milasoft
