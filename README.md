@@ -75,8 +75,8 @@ We do need a transfer routine and that routine, by no coincidence, will be store
 
 This is our commented routine:
 
-JSR $080D  ; call the Koala picture
-SEI  ; stop what you're doing IRQ
+'''JSR $080D  ; call the Koala picture
+''' SEI  ; stop what you're doing IRQ
 LDA #$34 ; turn off ROM so we can access the full 64K memory
 STA $01   ;
 LDX #$00 ; set X to zero
