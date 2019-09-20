@@ -5,6 +5,6 @@ The purpose of this tutorial is to link a Commodore 64 Koala picture with a seco
 
 Files:
 KP slide show.D64 (sample Koala picture files)
-
+KoalaKruncher-BC.D64 (Brian Conrad's Koala Cruncher program)
 
 Milasoft
